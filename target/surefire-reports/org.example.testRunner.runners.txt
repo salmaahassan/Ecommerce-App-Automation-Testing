@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunner.runners
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 394.548 s <<< FAILURE! - in org.example.testRunner.runners
+org.example.testRunner.runners.runScenario["first slider is clickable on home page", "F06_HmeSliders | user can click on any of the 2 sliders and should be redirected to the url of the product in slider"](12)  Time elapsed: 13.151 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	The first slider is clickable but iphone product is not displayed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.first_slider_is_displayed(D06_homeSlidersStepDef.java:25)
+	at ✽.relative product of first slider should be displayed(file:///C:/Users/salma/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:5)
+
+org.example.testRunner.runners.runScenario["second slider is clickable on home page", "F06_HmeSliders | user can click on any of the 2 sliders and should be redirected to the url of the product in slider"](13)  Time elapsed: 18.246 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	The second slider is clickable but Nokia product is not displayed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D06_homeSlidersStepDef.second_slider_is_displayed(D06_homeSlidersStepDef.java:40)
+	at ✽.relative product of second slider should be displayed(file:///C:/Users/salma/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:9)
+
+org.example.testRunner.runners.runScenario["user opens rss link", "F07_followUs | users could open followUs links"](16)  Time elapsed: 18.645 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D07_followUsStepDef.linkisopened(D07_followUsStepDef.java:66)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/salma/IdeaProjects/demonopcommerce/src/main/resources/features/F07_followUs.feature:14)
+
